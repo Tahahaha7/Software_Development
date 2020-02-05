@@ -50,3 +50,35 @@ def FileLogTest(filelogInstance = None):
     log2.warning('Another CS162 Filelog instance Found with id ' + str(id(log2)))
 
 FileLogTest(filelogInstance = FileLog)
+
+
+
+
+# Solution from class
+
+class FileLog():
+    _instance = None
+
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = object.__new__(cls)
+            cls._instance.file = "Log.txt"
+            cls._instance.level = 5
+        return cls._instance
+
+    def generic(self, prefix, message, level):
+        if level >= self.level:
+            with open(self.file, "a") as f:
+                f.write(prefix + message + "\n")
+
+    def debug(self, message):
+        self.generic("DEBUG: ", message, 4)
+
+    def info(self, message):
+        self.generic("INFO: ", message, 5)
+
+    def warning(self, message):
+        self.generic("WARNING: ", message, 6)
+
+    def error(self, message):
+        self.generic("ERROR: ", message, 7)
