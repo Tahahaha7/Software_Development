@@ -1,5 +1,3 @@
-import unittest
-
 class ClockIterator():
     def __init__(self):
         self.h, self.m = 0, 0
@@ -23,14 +21,3 @@ class ClockIterator():
         for i in self:
             store.append(i)
         return store[idx-1]
-
-clock = ClockIterator()
-
-class TestStr(unittest.TestCase):
-    
-    def test1(self):
-        self.assertEqual(clock.storing(1441), "00:00")
-    def test2(self):
-        self.assertEqual(clock.storing(61), "01:00")
-if __name__ == '__main__':
-    unittest.main()
