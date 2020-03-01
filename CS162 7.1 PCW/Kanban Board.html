@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Kanban Board Design</title>
+<meta charset="utf-8">
+<style>
+body {
+  background-image: url('https://all4desktop.com/data_images/original/4236532-background-images.jpg');
+  background-size: cover;
+}
+* {
+  box-sizing: border-box;
+}
+.box {
+  width: 320px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+.column {
+  float: left;
+  width: 33%;
+  padding: 15px;
+  height: 420px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.sticker
+{
+   width:100px;
+   height:100px;
+   border:1px solid black;
+   transform:rotate(30deg);
+   -webkit-transform:rotate(30deg);
+   background-color:yellow;
+}
+</style>
+</head>
+<body>
+  <center>
+  <form action="file" method="post">
+    <br>
+    <input type="text" name="task" placeholder="Write your task">
+    <input type="text" name="description" placeholder="Description">
+    <br><br>
+    To Do: <input type="radio" name="type" checked>
+    Doing: <input type="radio" name="type">
+    Done: <input type="radio" name="type">
+    <br><br>
+    <input type="submit" name="submit">
+  </form>
+  </center>
+  <h1 style="text-align:center; font-family:garamond; font-size:300%;">
+        <strong>KANBAN BOARD</strong>
+  </h1>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2 style="text-align:center;">To Do</h2>
+	&nbsp;
+    <p>List of tasks:</p>
+    <ol>
+        <li>Wake up in the mo</li>
+        <li>Eat breakfast</li>
+        <li>Prepare for the class</li>
+        <li>Visit <a href="https://www.mozilla.org/"> Mozilla homepage </a>to learn more about HTML</li>
+    </ol> 
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2 style="text-align:center;">In Progress</h2>
+	&nbsp;
+    <p>Ongoing tasks:</p>
+    <ul>
+        <li>Taking CS162</li>
+        <li>Asking question about HTML</li>
+    </ul>
+    &nbsp;
+    <center>
+    <div class="sticker">
+      <p style="text-align:center;">Yesterday &nbsp; you said tomorrow, &nbsp; Just do it!</p>
+    </div>
+    </center>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2 style="text-align:center;">Done</h2>
+	&nbsp;
+    <p>Accomplished tasks:</p>
+    <ul>
+        <li>Finished work-study for the week</li>
+        <li>Applied for various internships</li>
+    </ul>
+    <center>
+    <img src="https://cdn0.iconfinder.com/data/icons/business-1-31/129/71-512.png" alt="Simply Easy Learning" width="200" height="200">
+    </center>
+  </div>
+</div>
+</body>
+</html>
