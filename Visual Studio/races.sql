@@ -1,6 +1,8 @@
 .mode column
 PRAGMA foreign_keys = ON;
 
+-- CREATING TABLES
+
 CREATE TABLE Runners (
     RUNNERID INTEGER PRIMARY KEY,
     FIRSTNAME VARCHAR(20),
@@ -51,7 +53,7 @@ INSERT INTO Runners VALUES (2, 'Steven', 'Hill', 6.4);
 INSERT INTO Runners VALUES (3, 'Sara', 'Queens', 5.9);
 INSERT INTO Runners VALUES (4, 'Sam', 'Claire', 6.6);
 
--- Relational information
+-- RELATIONAL INFORMATION
 
 INSERT INTO Events VALUES (1, 1);
 INSERT INTO Events VALUES (1, 4);
