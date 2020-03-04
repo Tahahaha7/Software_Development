@@ -54,6 +54,8 @@ INSERT INTO Runners VALUES (1, 'Tom', 'Will', 'M', 'tom@gmail.com', 7.1);
 INSERT INTO Runners VALUES (2, 'Steven', 'Hill', 'M', 'steven@gmail.com', 6.4);
 INSERT INTO Runners VALUES (3, 'Sara', 'Queens', 'F', 'sara@gmail.com', 5.9);
 INSERT INTO Runners VALUES (4, 'Sam', 'Claire', 'F', 'sam@gmail.com', 6.6);
+INSERT INTO Runners VALUES (4, 'Ali', 'Kamara', 'M', 'ali@gmail.com', 6.2);
+INSERT INTO Runners VALUES (4, 'Sam', 'Claire', 'F', 'sam@gmail.com', 6.6);
 
 -- RELATIONAL INFORMATION
 
