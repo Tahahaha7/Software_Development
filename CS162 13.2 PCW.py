@@ -19,7 +19,7 @@ def index():
 
 @app.route('/add', methods=['POST'])
 def add():
-    element = Entry(text=request.form['item'], complete=False)
+    element = Entry(text=request.form['item'], status=False)
     db.session.add(element)
     db.session.commit()
     
